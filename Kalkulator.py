@@ -26,8 +26,7 @@ def calc():
 	except ValueError:
 		data("Убедись что ты ввёл 3 значения")
 
-def grafik():
-    t=0
+
 def veel():
     global t
     if t==0:
