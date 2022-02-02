@@ -165,6 +165,57 @@ def vihmavari():
     plt.grid(True)
     plt.show()
 
+def konn():
+    x = np.linspace(-7,7,100)
+    y = -3/49*x**2+8
+    plt.plot(x,y)
+    x = np.linspace(-7,7,100)
+    y = 4/49*x**2+1
+    plt.plot(x,y)
+    x = np.linspace(-6.8,-2,100)
+    y = -0.75*(x+4)**2+11
+    plt.plot(x,y)
+    x = np.linspace(2,6.8,100)
+    y = -0.75*(x-4)**2+11
+    plt.plot(x,y)
+    x = np.linspace(-5.8,-2.8,100)
+    y = -1*(x+4)**2+9
+    plt.plot(x,y)
+    x = np.linspace(2.8,5.8,100)
+    y = -1*(x-4)**2+9
+    plt.plot(x,y)
+    x = np.linspace(-4,4,100)
+    y = 4/9*x**2-5
+    plt.plot(x,y)
+    x = np.linspace(-5.2,5.2,100)
+    y = 4/9*x**2-9
+    plt.plot(x,y)
+    x = np.linspace(-7,-2.8,100)
+    y = -1/16*(x+3)**2-6
+    plt.plot(x,y)
+    x = np.linspace(2.8,7,100)
+    y = -1/16*(x-3)**2-6
+    plt.plot(x,y)
+    x = np.linspace(-7,0,100)
+    y = 1/9*(x+4)**2-11
+    plt.plot(x,y)
+    x = np.linspace(0,7,100)
+    y = 1/9*(x-4)**2-11
+    plt.plot(x,y)
+    x = np.linspace(-7,-4.5,100)
+    y = -1*(x+5)**2
+    plt.plot(x,y)
+    x = np.linspace(4.5,7,100)
+    y = -1*(x-5)**2
+    plt.plot(x,y)
+    x = np.linspace(-3,3,100)
+    y = 2/9*x**2+2
+    plt.plot(x,y)
+    plt.title("Лягуха")
+    plt.ylabel("y")
+    plt.xlabel("x")
+    plt.grid(True)
+    plt.show()
 
 
 aken=Tk()
@@ -201,9 +252,11 @@ var=IntVar()
 r1=Radiobutton(f2,text="Кит",variable=var,value=1,font="Arial 26",command=kala)
 r2=Radiobutton(f2,text="Очки",variable=var,value=2, font="Arial 26",command=prillid)
 r3=Radiobutton(f2,text="Зонтик",variable=var,value=3, font="Arial 26",command=vihmavari)
+r4=Radiobutton(f2,text="Лягушка",variable=var,value=3, font="Arial 26",command=konn)
 r1.pack()
 r2.pack()
 r3.pack()
+r4.pack()
 
 
 
